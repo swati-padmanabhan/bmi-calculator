@@ -14,6 +14,8 @@ namespace BMICalculator.models
         private double _height;
         private double _weight;
         private string _title;
+        static double DEFAULT_HEIGHT = 152.4;
+        static double DEFAULT_WEIGHT = 50;
 
         public int Id
         {
@@ -61,7 +63,7 @@ namespace BMICalculator.models
             Title = title;
         }
         //Constructor with default values for height weight and title
-        public Person(int id, string name, int age) : this(id, name, age, 152.4, 50.0, "Person Details")
+        public Person(int id, string name, int age) : this(id, name, age, DEFAULT_HEIGHT, DEFAULT_WEIGHT, "Person Details")
         { }
 
         //Actual calculation of BMI 
